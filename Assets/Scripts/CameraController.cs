@@ -17,8 +17,8 @@ public class CameraController : MonoBehaviour {
 	void Update () {
 		
 		if (fireBall.transform.position.z <= 1829) { //In front of headpin --> Camera stops when it reaches it 
-			this.transform.position = new Vector3  (this.transform.position.x, fireBall.transform.position.y - offset.y, fireBall.transform.position.z - offset.z);
-            //this.transform.position = fireBall.transform.position - offset;
+            // this.transform.position = new Vector3  (this.transform.position.x, fireBall.transform.position.y - offset.y, fireBall.transform.position.z - offset.z);
+            this.transform.position = fireBall.transform.position - offset;
         }
 
         this.transform.position = new Vector3 (Mathf.Clamp(transform.position.x, -40f, 40f), transform.position.y, transform.position.z);
