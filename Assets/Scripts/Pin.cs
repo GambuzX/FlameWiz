@@ -13,8 +13,8 @@ public class Pin : MonoBehaviour {
 
 		if ((tiltX < standingThreshold) && (tiltZ < standingThreshold)) {
 			return true;
+		} else {
+			return false;	
 		}
-
-		return false;	
 	}
 }

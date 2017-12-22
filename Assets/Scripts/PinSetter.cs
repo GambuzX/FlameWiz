@@ -8,12 +8,14 @@ public class PinSetter : MonoBehaviour {
 	private Text pinDisplay;
 	private bool ballEnteredBox = false;
 	private float lastChangeTime;
+	private Ball ball;
 
 	public int lastStandingCount = -1;
 
 	// Use this for initialization
 	void Start () {
 		pinDisplay = GameObject.Find ("Pin Counter").GetComponent<Text> ();
+		ball = GameObject.FindObjectOfType<Ball> ();
 	}
 
 
@@ -75,5 +77,6 @@ public class PinSetter : MonoBehaviour {
 		pinDisplay.color = Color.green;
 		lastStandingCount = -1;
 		ballEnteredBox = false;
+		ball.Reset ();
 	}
 }
