@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pin : MonoBehaviour {
 
 	public float standingThreshold = 9f;
+	public bool isRaised = false;
 
 
 	public bool IsStanding(){
