@@ -9,7 +9,7 @@ public class Pin : MonoBehaviour {
 
 
 	public bool IsStanding(){
-		float tiltX = Mathf.Abs(this.transform.rotation.eulerAngles.x);
+		float tiltX = Mathf.Abs(this.transform.rotation.eulerAngles.x);         //eulerAngles devolve sempre positivo. -6.0º = 354º
 		float tiltZ = Mathf.Abs(this.transform.rotation.eulerAngles.z);
 
 		if ((tiltX < standingThreshold) && (tiltZ < standingThreshold)) {

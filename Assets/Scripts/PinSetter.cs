@@ -12,6 +12,7 @@ public class PinSetter : MonoBehaviour {
 
 	public int lastStandingCount = -1;
 	public float distanceToRaise = 40f;
+	public GameObject pinSet;
 
 	// Use this for initialization
 	void Start () {
@@ -106,5 +107,6 @@ public class PinSetter : MonoBehaviour {
 
 	public void RenewPins(){
 		//places new pins
+		Instantiate(pinSet, new Vector3(0f, 0f, 1829f), Quaternion.identity);
 	}
 }
