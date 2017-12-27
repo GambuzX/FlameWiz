@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent (typeof(Ball))]
 public class Ball : MonoBehaviour {
 
 	public float speedFactor;
