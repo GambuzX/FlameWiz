@@ -9,23 +9,63 @@ public class ActionMaster {
 	//private int[] bowls = new int[21]; //array used to store bowls
 	public int bowl = 1;  //bowl number
 
+	private bool allPinsFellLastSet = false;
+	private int firstTwoBowlsLastSet = 0;
+
 	public Action Bowl (int pins) {
 		if (pins < 0 || pins > 10) {throw new UnityException("Invalid number of pins");}
 
-		// If last bowl (23rd)
-		// Returns Action.EndTurn to complete score;
+		// If sum of first 2 bowls of last set are equal to ten (spare)
+		// Returns Action.EndTurn;
 
-		if (bowl == 23) {
+		if (bowl == 19 && pins != 10) {
+			firstTwoBowlsLastSet += pins;
+		}
+
+		if (bowl == 20 && pins != 10) {
+			int pinTotal = firstTwoBowlsLastSet + pins;
+
+			if (pinTotal == 10) {
+				allPinsFellLastSet = true;
+				bowl++;
+				return Action.EndTurn;
+			}
+		}
+
+		// If on 20th bowl and not all pins have fallen in the last set
+		// Returns Action.EndGame;
+
+		if (bowl == 20 && !allPinsFellLastSet) {
+			return Action.EndGame;
+		}
+
+		// If strike on 19th play, does not jump to bowl 21. Instead goes on to 20th
+		// Returns Action.EndTurn
+
+		if (bowl == 19 && pins == 10) {
+			allPinsFellLastSet = true;
 			bowl++;
 			return Action.EndTurn;
 		}
 
-		// If after last bowl (23rd)
-		// Returns Action.EndGame;
+		// If strike on 20th bowl goes on to 21st
+		// Returns Action.EndTurn
 
-		if (bowl > 23) {
+		if (bowl == 20 && pins == 10) {
+			allPinsFellLastSet = true;
+			bowl++;
+			return Action.EndTurn;
+		}
+
+		// If last bowl (21st)
+		// Returns Action.EndTurn to complete score;
+
+		if (bowl >= 21) {
+			bowl++;
 			return Action.EndGame;
 		}
+
+		// Strike
 
 		if (pins == 10) {
 			bowl += 2;

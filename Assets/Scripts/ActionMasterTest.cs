@@ -40,20 +40,64 @@ public class ActionMasterTest {
 
 	[Test]
 	public void T04SecondBowlReturnsEndTurn() {
-		actionMaster.bowl = 2;
+		actionMaster.Bowl (2);
+		actionMaster.Bowl (2);
+		actionMaster.Bowl (2);
 		Assert.AreEqual (endTurn, actionMaster.Bowl(5));
 	}
 
 	[Test]
-	public void T05LastBowlReturnsEndTurn() {
-		actionMaster.bowl = 23;
-		Assert.AreEqual (endTurn, actionMaster.Bowl(7));
+	public void T05LastBowlReturnsEndGame() {
+		actionMaster.bowl = 21;
+		Assert.AreEqual (endGame, actionMaster.Bowl(7));
 	}
 
 	[Test]
-	public void T06AfterLastBowlEndsGame() {
-		actionMaster.bowl = 24;
-		Assert.AreEqual (endGame, actionMaster.Bowl(8));
+	public void T06IfAfterLastBowlEndsGame() {
+		actionMaster.bowl = 27;
+		Assert.AreEqual (endGame, actionMaster.Bowl(10));
+	}
+
+	[Test]
+	public void T07NoStrikeOrSpareInLastSetEndsGame() {
+		actionMaster.bowl = 19;
+		actionMaster.Bowl (2);
+		Assert.AreEqual (endGame, actionMaster.Bowl(7));
+	}
+
+	[Test]
+	public void T08AfterFirstStrikeInLastSetReturnsEndTurn() {
+		actionMaster.bowl = 19;
+		Assert.AreEqual (endTurn, actionMaster.Bowl(10));
+	}
+
+	[Test]
+	public void T09AfterFirstStrikeInLastSetGoesToBowl20() {
+		actionMaster.bowl = 19;
+		actionMaster.Bowl (10);
+		Assert.AreEqual (20, actionMaster.bowl);
+	}
+
+	[Test]
+	public void T10AfterSecondStrikeInLastSetGoesToBowl21() {
+		actionMaster.bowl = 19;
+		actionMaster.Bowl (10);
+		actionMaster.Bowl (10);
+		Assert.AreEqual (21, actionMaster.bowl);
+	}
+
+	[Test]
+	public void T11AfterSpareInLastSetGoesToBowl21() {
+		actionMaster.bowl = 19;
+		actionMaster.Bowl (2);
+		actionMaster.Bowl (8);
+		Assert.AreEqual (21, actionMaster.bowl);
+	}
+
+	[Test]
+	public void T12AfterFirstBowlInLastSetReturnsTidy() {
+		actionMaster.bowl = 19;
+		Assert.AreEqual (tidy, actionMaster.Bowl(2));
 	}
 
 }
