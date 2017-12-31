@@ -29,16 +29,6 @@ public class ActionMaster {
 				return Action.Reset;
 		} else if (bowl == 20 && !isLastBowlAwarded()) {
 				return Action.EndGame;	}
-<<<<<<< HEAD
-=======
-
-		// Strike
-
-		if (pins == 10) {
-			bowl += 2;
-			return Action.EndTurn;
-		}
->>>>>>> master
 
 		// If first bowl of frame
 		// Return Action.Tidy;
