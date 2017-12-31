@@ -133,6 +133,7 @@ public class ActionMasterTest {
 		Assert.AreEqual (tidy, actionMaster.Bowl (0));
 	}
 
+<<<<<<< HEAD
 	[Test]
 	public void T16Bowling10PinsOnSecondBowlOfFrameAdvancesCorrectly(){
 		actionMaster.Bowl (0);
@@ -152,5 +153,7 @@ public class ActionMasterTest {
 		Assert.AreEqual(endGame, actionMaster.Bowl(10));
 	}
 
+=======
+>>>>>>> master
 }
 

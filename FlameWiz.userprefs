@@ -1,9 +1,14 @@
 ﻿<Properties RefactoringSettings.EnableRefactorings="True" StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ActionMasterTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ActionMaster.cs">
     <Files>
+<<<<<<< HEAD
       <File FileName="Assets\Scripts\ActionMasterTest.cs" Line="147" Column="29" />
       <File FileName="Assets\Scripts\ActionMaster.cs" Line="35" Column="46" />
+=======
+      <File FileName="Assets\Scripts\ActionMasterTest.cs" Line="113" Column="4" />
+      <File FileName="Assets\Scripts\ActionMaster.cs" Line="26" Column="24" />
+>>>>>>> master
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
