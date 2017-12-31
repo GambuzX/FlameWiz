@@ -6,64 +6,29 @@ public class ActionMaster {
 
 	public enum Action {Tidy, Reset, EndTurn, EndGame};
 
-	//private int[] bowls = new int[21]; //array used to store bowls
+	private int[] bowls = new int[21]; //array used to store bowls
 	public int bowl = 1;  //bowl number
 
-	private bool allPinsFellLastSet = false;
-	private int firstTwoBowlsLastSet = 0;
-
 	public Action Bowl (int pins) {
-		if (pins < 0 || pins > 10) {throw new UnityException("Invalid number of pins");}
-
-		// If sum of first 2 bowls of last set are equal to ten (spare)
-		// Returns Action.EndTurn;
-
-		if (bowl == 19 && pins != 10) {
-			firstTwoBowlsLastSet += pins;
+		if (pins < 0 || pins > 10) {
+			throw new UnityException ("Invalid number of pins");
 		}
 
-		if (bowl == 20 && pins != 10) {
-			int pinTotal = firstTwoBowlsLastSet + pins;
+		bowls [bowl - 1] = pins;
 
-			if (pinTotal == 10) {
-				allPinsFellLastSet = true;
-				bowl++;
-				return Action.EndTurn;
-			}
-		}
 
-		// If on 20th bowl and not all pins have fallen in the last set
-		// Returns Action.EndGame;
-
-		if (bowl == 20 && !allPinsFellLastSet) {
-			return Action.EndGame;
-		}
-
-		// If strike on 19th play, does not jump to bowl 21. Instead goes on to 20th
-		// Returns Action.EndTurn
-
-		if (bowl == 19 && pins == 10) {
-			allPinsFellLastSet = true;
-			bowl++;
-			return Action.EndTurn;
-		}
-
-		// If strike on 20th bowl goes on to 21st
-		// Returns Action.EndTurn
-
-		if (bowl == 20 && pins == 10) {
-			allPinsFellLastSet = true;
-			bowl++;
-			return Action.EndTurn;
-		}
-
-		// If last bowl (21st)
-		// Returns Action.EndTurn to complete score;
+		//Handle last frame special cases
 
 		if (bowl >= 21) {
-			bowl++;
 			return Action.EndGame;
-		}
+		}	else if (bowl == 20 && bowls[19-1]== 10 && bowls[20-1] != 10) {  //If 19th bowl was a strike and 20th is not, return Tidy
+				bowl++;
+				return Action.Tidy;
+		}	else if (bowl >= 19 && isLastBowlAwarded ()) { //If Strike or Spare in last set, reset and add1 to bowl
+				bowl++;
+				return Action.Reset;
+		} else if (bowl == 20 && !isLastBowlAwarded()) {
+				return Action.EndGame;	}
 
 		// Strike
 
@@ -78,9 +43,14 @@ public class ActionMaster {
 			bowl++;
 			return Action.Tidy;
 		} else if (bowl % 2 == 0) { // If second bowl of frame Return Action.EndTurn;
+			bowl++;
 			return Action.EndTurn;
 		}
 
 		throw new UnityException ("Not sure what action to return");
+	}
+
+	private bool isLastBowlAwarded(){
+		return (bowls [19 - 1] + bowls [20 - 1] >= 10);
 	}
 }
