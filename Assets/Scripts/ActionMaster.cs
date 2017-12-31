@@ -30,18 +30,16 @@ public class ActionMaster {
 		} else if (bowl == 20 && !isLastBowlAwarded()) {
 				return Action.EndGame;	}
 
-		// Strike
-
-		if (pins == 10) {
-			bowl += 2;
-			return Action.EndTurn;
-		}
-
 		// If first bowl of frame
 		// Return Action.Tidy;
-		if (bowl % 2 != 0) { // Mid frame (or last frame)
-			bowl++;
-			return Action.Tidy;
+		if (bowl % 2 != 0) { // First Bowl of frame
+			if (pins == 10) {
+				bowl += 2;
+				return Action.EndTurn;
+			} else {
+				bowl++;
+				return Action.Tidy;
+			}
 		} else if (bowl % 2 == 0) { // If second bowl of frame Return Action.EndTurn;
 			bowl++;
 			return Action.EndTurn;

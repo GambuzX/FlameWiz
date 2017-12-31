@@ -133,5 +133,24 @@ public class ActionMasterTest {
 		Assert.AreEqual (tidy, actionMaster.Bowl (0));
 	}
 
+	[Test]
+	public void T16Bowling10PinsOnSecondBowlOfFrameAdvancesCorrectly(){
+		actionMaster.Bowl (0);
+		actionMaster.Bowl (10);
+		Assert.AreEqual (3, actionMaster.bowl);
+	}
+
+	[Test]
+	public void T17Dondi10thFrameTurkey () {
+		int[] rolls = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+		foreach (int roll in rolls) {
+			actionMaster.Bowl (roll);
+		}
+
+		Assert.AreEqual(reset, actionMaster.Bowl(10));
+		Assert.AreEqual(reset, actionMaster.Bowl(10));
+		Assert.AreEqual(endGame, actionMaster.Bowl(10));
+	}
+
 }
 

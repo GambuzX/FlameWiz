@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 821
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -106,8 +106,8 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 771
-  m_MinSize: {x: 504, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 506, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
   controlID: 118
 --- !u!114 &6
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 75
+  controlID: 50
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,8 +201,8 @@ MonoBehaviour:
     y: 0
     width: 859
     height: 483
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -255,8 +255,8 @@ MonoBehaviour:
     y: 0
     width: 431
     height: 771
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 20}
@@ -296,7 +296,7 @@ MonoBehaviour:
       name: FlameWiz
       fullName: FlameWiz
       resultStatus: 1
-      duration: 1.1459683
+      duration: 0.1507653
       messages: 
       output: 
       stacktrace: 
@@ -308,7 +308,7 @@ MonoBehaviour:
       name: Assembly-CSharp.dll
       fullName: C:/Users/mg_me/Desktop/repos/Unity/FlameWiz/Library/ScriptAssemblies/Assembly-CSharp.dll
       resultStatus: 1
-      duration: 1.0988411
+      duration: 0.0994949
       messages: 
       output: 
       stacktrace: 
@@ -320,7 +320,7 @@ MonoBehaviour:
       name: ActionMasterTest
       fullName: ActionMasterTest
       resultStatus: 1
-      duration: 1.0676405
+      duration: 0.0704904
       messages: 
       output: 
       stacktrace: 
@@ -332,7 +332,7 @@ MonoBehaviour:
       name: T00PassingTest
       fullName: ActionMasterTest.T00PassingTest
       resultStatus: 1
-      duration: 0.0547052
+      duration: 0.0403601
       messages: 
       output: 
       stacktrace: 
@@ -344,7 +344,7 @@ MonoBehaviour:
       name: T01OneStrikeReturnsEndTurn
       fullName: ActionMasterTest.T01OneStrikeReturnsEndTurn
       resultStatus: 1
-      duration: 0.0336097
+      duration: 0.0349231
       messages: 
       output: 
       stacktrace: 
@@ -356,7 +356,7 @@ MonoBehaviour:
       name: T02Bowl8ReturnsTidy
       fullName: ActionMasterTest.T02Bowl8ReturnsTidy
       resultStatus: 1
-      duration: 0.0332909
+      duration: 0.0328332
       messages: 
       output: 
       stacktrace: 
@@ -368,7 +368,7 @@ MonoBehaviour:
       name: T03Bowl28SpareReturnsEndTurn
       fullName: ActionMasterTest.T03Bowl28SpareReturnsEndTurn
       resultStatus: 1
-      duration: 0.0331738
+      duration: 0.0333441
       messages: 
       output: 
       stacktrace: 
@@ -380,7 +380,7 @@ MonoBehaviour:
       name: T04SecondBowlReturnsEndTurn
       fullName: ActionMasterTest.T04SecondBowlReturnsEndTurn
       resultStatus: 1
-      duration: 0.033315
+      duration: 0.0337464
       messages: 
       output: 
       stacktrace: 
@@ -392,7 +392,7 @@ MonoBehaviour:
       name: T05LastBowlReturnsEndGame
       fullName: ActionMasterTest.T05LastBowlReturnsEndGame
       resultStatus: 1
-      duration: 0.0332365
+      duration: 0.0334339
       messages: 
       output: 
       stacktrace: 
@@ -404,7 +404,7 @@ MonoBehaviour:
       name: T06NoStrikeOrSpareInLastSetEndsGame
       fullName: ActionMasterTest.T06NoStrikeOrSpareInLastSetEndsGame
       resultStatus: 1
-      duration: 0.0339298
+      duration: 0.0340111
       messages: 
       output: 
       stacktrace: 
@@ -416,7 +416,7 @@ MonoBehaviour:
       name: T07AfterFirstStrikeInLastSetResets
       fullName: ActionMasterTest.T07AfterFirstStrikeInLastSetResets
       resultStatus: 1
-      duration: 0.0332322
+      duration: 0.0333419
       messages: 
       output: 
       stacktrace: 
@@ -428,7 +428,7 @@ MonoBehaviour:
       name: T08AfterFirstStrikeInLastSetGoesToBowl20
       fullName: ActionMasterTest.T08AfterFirstStrikeInLastSetGoesToBowl20
       resultStatus: 1
-      duration: 0.0335506
+      duration: 0.0335571
       messages: 
       output: 
       stacktrace: 
@@ -440,7 +440,7 @@ MonoBehaviour:
       name: T09AfterSecondStrikeInLastSetGoesToBowl21
       fullName: ActionMasterTest.T09AfterSecondStrikeInLastSetGoesToBowl21
       resultStatus: 1
-      duration: 0.0330499
+      duration: 0.033881
       messages: 
       output: 
       stacktrace: 
@@ -452,7 +452,7 @@ MonoBehaviour:
       name: T10AfterSpareInLastSetGoesToBowl21
       fullName: ActionMasterTest.T10AfterSpareInLastSetGoesToBowl21
       resultStatus: 1
-      duration: 0.03323
+      duration: 0.0327895
       messages: 
       output: 
       stacktrace: 
@@ -464,7 +464,7 @@ MonoBehaviour:
       name: T11AfterFirstBowlInLastSetReturnsTidy
       fullName: ActionMasterTest.T11AfterFirstBowlInLastSetReturnsTidy
       resultStatus: 1
-      duration: 0.0332369
+      duration: 0.0333504
       messages: 
       output: 
       stacktrace: 
@@ -476,7 +476,7 @@ MonoBehaviour:
       name: T12CheckResetAtSpareInLastSet
       fullName: ActionMasterTest.T12CheckResetAtSpareInLastSet
       resultStatus: 1
-      duration: 0.0333091
+      duration: 0.0341034
       messages: 
       output: 
       stacktrace: 
@@ -488,7 +488,7 @@ MonoBehaviour:
       name: T13YoutubeRollsEndInEndGame
       fullName: ActionMasterTest.T13YoutubeRollsEndInEndGame
       resultStatus: 1
-      duration: 0.0332537
+      duration: 0.033564
       messages: 
       output: 
       stacktrace: 
@@ -500,7 +500,7 @@ MonoBehaviour:
       name: T14TidyInBowl20AfterNoStrikeAndLastBowlAwarded
       fullName: ActionMasterTest.T14TidyInBowl20AfterNoStrikeAndLastBowlAwarded
       resultStatus: 1
-      duration: 0.0332023
+      duration: 0.0335224
       messages: 
       output: 
       stacktrace: 
@@ -512,7 +512,7 @@ MonoBehaviour:
       name: T15BensBowl20Test
       fullName: ActionMasterTest.T15BensBowl20Test
       resultStatus: 1
-      duration: 0.0332289
+      duration: 0.0329748
       messages: 
       output: 
       stacktrace: 
@@ -520,12 +520,36 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    m_ResultText: T13YoutubeRollsEndInEndGame (0.033s)
+    - id: '[Assembly-CSharp][ActionMasterTest.T16Bowling10PinsOnSecondBowlOfFrameAdvancesCorrectly]'
+      name: T16Bowling10PinsOnSecondBowlOfFrameAdvancesCorrectly
+      fullName: ActionMasterTest.T16Bowling10PinsOnSecondBowlOfFrameAdvancesCorrectly
+      resultStatus: 1
+      duration: 0.0334171
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][ActionMasterTest.T17Dondi10thFrameTurkey]'
+      name: T17Dondi10thFrameTurkey
+      fullName: ActionMasterTest.T17Dondi10thFrameTurkey
+      resultStatus: 1
+      duration: 0.04124
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    m_ResultText: T17Dondi10thFrameTurkey (0.041s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9acf8e94
-      m_LastClickedID: -1802580070
+      m_SelectedIDs: b6a01906
+      m_LastClickedID: 102342838
       m_ExpandedIDs: a4d700d3be35b6f1b3c2b738ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -703,7 +727,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 7e4fffffaa4fffffd052ffffb256ffffd256ffffca59ffffc85bffffe85bffffba5effff2e62ffff4e62ffff9665ffffb268ffffd268ffffa86bfffff671ffff1672ffffc474fffffa77ffff1a78ffff447bffff067fffff267fffff3682ffff6a86ffff8a86ffff6e89ffff0c8dffff2c8dffff7490ffff5c91ffff7c91ffff4c98ffff6c98ffff689bffff5e9cffff8a9cffff9c9fffffdaa5fffffaa5ffffd8a8ffffbcafffffecafffff48b3ffff50b8ffff90bbffffb0bbffff06bfffff86c5ffffb6c5ffffdec8ffffaeceffff80d1ffffacd1ffffead4ffff28dcffff54dcffff1adffffffcdfffff08e6ffff28e6ffffeee8fffffce9ffffe2ebffff0eecffff82efffffa6fbffff00000000
+    m_ExpandedIDs: ead9ffff1adaffff84ddffff9ce1ffffc8e1ffff2ee5ffff20e9ffff40e9ffff50ecffff44efffff74effffff2f2ffffa6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
