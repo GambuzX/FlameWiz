@@ -9,6 +9,9 @@ public class PinSetter : MonoBehaviour {
 	private bool ballEnteredBox = false;
 	private float lastChangeTime;
 	private Ball ball;
+	private int lastSettledCount = 10;
+	private ActionMaster actionMaster = new ActionMaster();
+	private Animator animator;
 
 	public int lastStandingCount = -1;
 	public float distanceToRaise = 40f;
@@ -18,13 +21,11 @@ public class PinSetter : MonoBehaviour {
 	void Start () {
 		pinDisplay = GameObject.Find ("Pin Counter").GetComponent<Text> ();
 		ball = GameObject.FindObjectOfType<Ball> ();
+		animator = this.GetComponent<Animator> ();
 	}
 
-
-	private int CountStanding ()
-	{
+	private int CountStanding (){
 		int pinCount = 0;
-
 		foreach (Pin pin in GameObject.FindObjectsOfType<Pin>()) {
 			if (pin.IsStanding ()) {
 				pinCount++;
@@ -76,8 +77,28 @@ public class PinSetter : MonoBehaviour {
 	}
 
 	void PinsHaveSettled() {
+
+		int standingPins = CountStanding ();
+		int fallenPins = lastSettledCount - standingPins;
+		lastSettledCount = standingPins;
+
+		ActionMaster.Action action = actionMaster.Bowl(fallenPins);
+
+		if (action == ActionMaster.Action.Tidy) {
+			animator.SetTrigger ("tidyTrigger");
+		} else if (action == ActionMaster.Action.Reset) {
+			animator.SetTrigger("resetTrigger");
+			standingPins = 10;
+		}else if (action == ActionMaster.Action.EndTurn) {
+			animator.SetTrigger("resetTrigger");
+			standingPins = 10;
+		}else if (action == ActionMaster.Action.EndGame) {
+			throw new UnityException("Don't know how to handle end game yet");
+		}
+
 		pinDisplay.color = Color.green;
 		lastStandingCount = -1;
+		lastSettledCount = 10;
 		ballEnteredBox = false;
 		ball.Reset ();
 	}
