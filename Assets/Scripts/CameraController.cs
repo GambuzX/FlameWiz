@@ -21,7 +21,7 @@ public class CameraController : MonoBehaviour {
             this.transform.position = fireBall.transform.position - offset;
         }
 
-        this.transform.position = new Vector3 (Mathf.Clamp(transform.position.x, -40f, 40f), transform.position.y, transform.position.z);
+        //this.transform.position = new Vector3 (Mathf.Clamp(transform.position.x, -40f, 40f), transform.position.y, transform.position.z);
 	}
 
     public void MoveCamera(float xNudge)

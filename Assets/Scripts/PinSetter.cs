@@ -6,19 +6,19 @@ using UnityEngine.UI;
 public class PinSetter : MonoBehaviour {
 	
 	private Text pinDisplay;
-	private bool ballEnteredBox = false;
 	private float lastChangeTime;
 	private Ball ball;
 	private int lastSettledCount = 10;
-	private ActionMaster actionMaster = new ActionMaster();
 	private Animator animator;
+	private int lastStandingCount = -1;
+    private ActionMaster actionMaster = new ActionMaster();
 
-	public int lastStandingCount = -1;
-	public float distanceToRaise = 40f;
+    public float distanceToRaise = 40f;
 	public GameObject pinSet;
+    public bool ballLeftBox = false;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		pinDisplay = GameObject.Find ("Pin Counter").GetComponent<Text> ();
 		ball = GameObject.FindObjectOfType<Ball> ();
 		animator = this.GetComponent<Animator> ();
@@ -34,12 +34,6 @@ public class PinSetter : MonoBehaviour {
 		return pinCount;
 	}
 
-	void OnTriggerEnter(Collider col) {
-		if (col.GetComponent<Ball> ()) {
-			pinDisplay.color = Color.red;
-			ballEnteredBox = true;
-		}
-	}
 
 	void OnTriggerExit(Collider col) {
 		Pin pin = col.GetComponentInParent<Pin>();
@@ -54,8 +48,9 @@ public class PinSetter : MonoBehaviour {
 	void Update () {
 		pinDisplay.text = CountStanding().ToString ();
 
-		if (ballEnteredBox) {
-			CheckStanding ();
+		if (ballLeftBox) {
+            pinDisplay.color = Color.red;
+            CheckStanding ();
 		}
 
 	}
@@ -82,7 +77,7 @@ public class PinSetter : MonoBehaviour {
 		int fallenPins = lastSettledCount - standingPins;
 		lastSettledCount = standingPins;
 
-		ActionMaster.Action action = actionMaster.Bowl(fallenPins);
+        ActionMaster.Action action = actionMaster.Bowl(fallenPins);
 
 		if (action == ActionMaster.Action.Tidy) {
 			animator.SetTrigger ("tidyTrigger");
@@ -99,7 +94,7 @@ public class PinSetter : MonoBehaviour {
 		pinDisplay.color = Color.green;
 		lastStandingCount = -1;
 		lastSettledCount = 10;
-		ballEnteredBox = false;
+		ballLeftBox = false;
 		ball.Reset ();
 	}
 
