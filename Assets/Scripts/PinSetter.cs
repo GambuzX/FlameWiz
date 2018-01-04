@@ -12,27 +12,20 @@ public class PinSetter : MonoBehaviour {
 	private Animator animator;
 	private int lastStandingCount = -1;
     private ActionMaster actionMaster = new ActionMaster();
+    private PinCounter pinCounter;
+    private GameManager gameManager;
 
+
+    public GameObject pinSet;
     public float distanceToRaise = 40f;
-	public GameObject pinSet;
-    public bool ballLeftBox = false;
 
-    // Use this for initialization
     void Start () {
 		pinDisplay = GameObject.Find ("Pin Counter").GetComponent<Text> ();
 		ball = GameObject.FindObjectOfType<Ball> ();
 		animator = this.GetComponent<Animator> ();
-	}
-
-	private int CountStanding (){
-		int pinCount = 0;
-		foreach (Pin pin in GameObject.FindObjectsOfType<Pin>()) {
-			if (pin.IsStanding ()) {
-				pinCount++;
-			}
-		}
-		return pinCount;
-	}
+        pinCounter = GameObject.FindObjectOfType<PinCounter>();
+        gameManager = GameObject.FindObjectOfType<GameManager>();
+    }
 
 
 	void OnTriggerExit(Collider col) {
@@ -44,21 +37,11 @@ public class PinSetter : MonoBehaviour {
 	}
 
 
-	// Update is called once per frame
-	void Update () {
-		pinDisplay.text = CountStanding().ToString ();
 
-		if (ballLeftBox) {
-            pinDisplay.color = Color.red;
-            CheckStanding ();
-		}
-
-	}
-
-	void CheckStanding(){
+	public void CheckStanding(){
 		//Update the lastStandingCount
 		//Call PinsHaveSettled() when they have
-		int currentStanding = CountStanding ();
+		int currentStanding = pinCounter.CountStanding ();
 
 		if (currentStanding != lastStandingCount) {
 			lastChangeTime = Time.time;
@@ -71,58 +54,74 @@ public class PinSetter : MonoBehaviour {
 		}
 	}
 
-	void PinsHaveSettled() {
+    void PinsHaveSettled()
+    {
 
-		int standingPins = CountStanding ();
-		int fallenPins = lastSettledCount - standingPins;
-		lastSettledCount = standingPins;
+        int standingPins = pinCounter.CountStanding();
+        int fallenPins = lastSettledCount - standingPins;
+        lastSettledCount = standingPins;
 
         ActionMaster.Action action = actionMaster.Bowl(fallenPins);
 
-		if (action == ActionMaster.Action.Tidy) {
-			animator.SetTrigger ("tidyTrigger");
-		} else if (action == ActionMaster.Action.Reset) {
-			animator.SetTrigger("resetTrigger");
-			standingPins = 10;
-		}else if (action == ActionMaster.Action.EndTurn) {
-			animator.SetTrigger("resetTrigger");
-			standingPins = 10;
-		}else if (action == ActionMaster.Action.EndGame) {
-			throw new UnityException("Don't know how to handle end game yet");
-		}
+        if (action == ActionMaster.Action.Tidy)
+        {
+            animator.SetTrigger("tidyTrigger");
+        }
+        else if (action == ActionMaster.Action.Reset)
+        {
+            animator.SetTrigger("resetTrigger");
+            lastSettledCount = 10;
+        }
+        else if (action == ActionMaster.Action.EndTurn)
+        {
+            animator.SetTrigger("resetTrigger");
+            lastSettledCount = 10;
+        }
+        else if (action == ActionMaster.Action.EndGame)
+        {
+            throw new UnityException("Don't know how to handle end game yet");
+        }
 
-		pinDisplay.color = Color.green;
-		lastStandingCount = -1;
-		lastSettledCount = 10;
-		ballLeftBox = false;
-		ball.Reset ();
-	}
+        pinDisplay.color = Color.green;
+        lastStandingCount = -1;       
+        gameManager.ballLeftBox = false;
+        ball.Reset();
+    }
 
-	public void RaisePins() {
-		//raise standing pins by distanceToRaise
+    public void RaisePins()
+    {
+        //raise standing pins by distanceToRaise
 
-		foreach (Pin pin in GameObject.FindObjectsOfType<Pin>()) {
-			if (pin.IsStanding()) {
-				pin.transform.Translate (0f, distanceToRaise, 0f);
-				pin.isRaised = true;
-				pin.GetComponent<Rigidbody> ().useGravity = false;
-			}
-		}
-	}
+        foreach (Pin pin in GameObject.FindObjectsOfType<Pin>())
+        {
+            if (pin.IsStanding())
+            {
+                pin.transform.Translate(0f, distanceToRaise, 0f);
+                pin.isRaised = true;
+                pin.GetComponent<Rigidbody>().useGravity = false;
+            }
+        }
+    }
 
-	public void LowerPins(){
-		//lower raised pins to floor
-		foreach (Pin pin in GameObject.FindObjectsOfType<Pin>()) {
-			if (pin.isRaised) {
-				pin.transform.Translate (0f, -distanceToRaise, 0f);
-				pin.isRaised = false;
-				pin.GetComponent<Rigidbody> ().useGravity = true;
-			}
-		}
-	}
+    public void LowerPins()
+    {
+        //lower raised pins to floor
+        foreach (Pin pin in GameObject.FindObjectsOfType<Pin>())
+        {
+            if (pin.isRaised)
+            {
+                pin.transform.Translate(0f, -distanceToRaise, 0f);
+                pin.isRaised = false;
+                pin.GetComponent<Rigidbody>().useGravity = true;
+            }
+        }
+    }
 
-	public void RenewPins(){
-		//places new pins
-		Instantiate(pinSet, new Vector3(0f, 0f, 1829f), Quaternion.identity);
-	}
+    public void RenewPins()
+    {
+        //places new pins
+        Instantiate(pinSet, new Vector3(0f, 0f, 1829f), Quaternion.identity);
+    }
+
+
 }

@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
-  m_MinSize: {x: 683, y: 492}
+  m_MinSize: {x: 506, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 125
+  controlID: 56
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,14 +64,14 @@ MonoBehaviour:
     y: 0
     width: 389
     height: 987
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 17}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,10 +209,10 @@ MonoBehaviour:
     y: 0
     width: 1531
     height: 987
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 12
+  controlID: 57
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,10 +233,10 @@ MonoBehaviour:
     y: 0
     width: 1531
     height: 596
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 13
+  controlID: 58
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -255,8 +255,8 @@ MonoBehaviour:
     y: 0
     width: 1152
     height: 596
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -387,7 +387,7 @@ MonoBehaviour:
       name: FlameWiz
       fullName: FlameWiz
       resultStatus: 1
-      duration: 0.6360789
+      duration: 0.6487998
       messages: 
       output: 
       stacktrace: 
@@ -399,7 +399,7 @@ MonoBehaviour:
       name: Assembly-CSharp.dll
       fullName: "C:/Users/M\xE1rio Mesquita/Documents/repos/Unity/FlameWiz/Library/ScriptAssemblies/Assembly-CSharp.dll"
       resultStatus: 1
-      duration: 0.6033901
+      duration: 0.6033601
       messages: 
       output: 
       stacktrace: 
@@ -411,7 +411,7 @@ MonoBehaviour:
       name: ActionMasterTest
       fullName: ActionMasterTest
       resultStatus: 1
-      duration: 0.5940803
+      duration: 0.5939587
       messages: 
       output: 
       stacktrace: 
@@ -423,7 +423,7 @@ MonoBehaviour:
       name: T00PassingTest
       fullName: ActionMasterTest.T00PassingTest
       resultStatus: 1
-      duration: 0.0219593
+      duration: 0.0223219
       messages: 
       output: 
       stacktrace: 
@@ -435,7 +435,7 @@ MonoBehaviour:
       name: T01OneStrikeReturnsEndTurn
       fullName: ActionMasterTest.T01OneStrikeReturnsEndTurn
       resultStatus: 1
-      duration: 0.0175178
+      duration: 0.0164655
       messages: 
       output: 
       stacktrace: 
@@ -447,7 +447,7 @@ MonoBehaviour:
       name: T02Bowl8ReturnsTidy
       fullName: ActionMasterTest.T02Bowl8ReturnsTidy
       resultStatus: 1
-      duration: 0.0165214
+      duration: 0.0166126
       messages: 
       output: 
       stacktrace: 
@@ -459,7 +459,7 @@ MonoBehaviour:
       name: T03Bowl28SpareReturnsEndTurn
       fullName: ActionMasterTest.T03Bowl28SpareReturnsEndTurn
       resultStatus: 1
-      duration: 0.0152908
+      duration: 0.016708
       messages: 
       output: 
       stacktrace: 
@@ -471,7 +471,7 @@ MonoBehaviour:
       name: T04SecondBowlReturnsEndTurn
       fullName: ActionMasterTest.T04SecondBowlReturnsEndTurn
       resultStatus: 1
-      duration: 0.0165916
+      duration: 0.0166197
       messages: 
       output: 
       stacktrace: 
@@ -483,7 +483,7 @@ MonoBehaviour:
       name: T05LastBowlReturnsEndGame
       fullName: ActionMasterTest.T05LastBowlReturnsEndGame
       resultStatus: 1
-      duration: 0.0166654
+      duration: 0.0165673
       messages: 
       output: 
       stacktrace: 
@@ -495,7 +495,7 @@ MonoBehaviour:
       name: T06NoStrikeOrSpareInLastSetEndsGame
       fullName: ActionMasterTest.T06NoStrikeOrSpareInLastSetEndsGame
       resultStatus: 1
-      duration: 0.016576
+      duration: 0.0170702
       messages: 
       output: 
       stacktrace: 
@@ -507,7 +507,7 @@ MonoBehaviour:
       name: T07AfterFirstStrikeInLastSetResets
       fullName: ActionMasterTest.T07AfterFirstStrikeInLastSetResets
       resultStatus: 1
-      duration: 0.0165671
+      duration: 0.0166011
       messages: 
       output: 
       stacktrace: 
@@ -519,7 +519,7 @@ MonoBehaviour:
       name: T08AfterFirstStrikeInLastSetGoesToBowl20
       fullName: ActionMasterTest.T08AfterFirstStrikeInLastSetGoesToBowl20
       resultStatus: 1
-      duration: 0.016573
+      duration: 0.016557
       messages: 
       output: 
       stacktrace: 
@@ -531,7 +531,7 @@ MonoBehaviour:
       name: T09AfterSecondStrikeInLastSetGoesToBowl21
       fullName: ActionMasterTest.T09AfterSecondStrikeInLastSetGoesToBowl21
       resultStatus: 1
-      duration: 0.0165931
+      duration: 0.0165231
       messages: 
       output: 
       stacktrace: 
@@ -543,7 +543,7 @@ MonoBehaviour:
       name: T10AfterSpareInLastSetGoesToBowl21
       fullName: ActionMasterTest.T10AfterSpareInLastSetGoesToBowl21
       resultStatus: 1
-      duration: 0.0165004
+      duration: 0.0166288
       messages: 
       output: 
       stacktrace: 
@@ -555,7 +555,7 @@ MonoBehaviour:
       name: T11AfterFirstBowlInLastSetReturnsTidy
       fullName: ActionMasterTest.T11AfterFirstBowlInLastSetReturnsTidy
       resultStatus: 1
-      duration: 0.016607
+      duration: 0.0165659
       messages: 
       output: 
       stacktrace: 
@@ -567,7 +567,7 @@ MonoBehaviour:
       name: T12CheckResetAtSpareInLastSet
       fullName: ActionMasterTest.T12CheckResetAtSpareInLastSet
       resultStatus: 1
-      duration: 0.0168184
+      duration: 0.0166409
       messages: 
       output: 
       stacktrace: 
@@ -579,7 +579,7 @@ MonoBehaviour:
       name: T13YoutubeRollsEndInEndGame
       fullName: ActionMasterTest.T13YoutubeRollsEndInEndGame
       resultStatus: 1
-      duration: 0.0164319
+      duration: 0.0167212
       messages: 
       output: 
       stacktrace: 
@@ -591,7 +591,7 @@ MonoBehaviour:
       name: T14TidyInBowl20AfterNoStrikeAndLastBowlAwarded
       fullName: ActionMasterTest.T14TidyInBowl20AfterNoStrikeAndLastBowlAwarded
       resultStatus: 1
-      duration: 0.0167744
+      duration: 0.016617
       messages: 
       output: 
       stacktrace: 
@@ -603,7 +603,7 @@ MonoBehaviour:
       name: T15BensBowl20Test
       fullName: ActionMasterTest.T15BensBowl20Test
       resultStatus: 1
-      duration: 0.0168308
+      duration: 0.016216
       messages: 
       output: 
       stacktrace: 
@@ -615,7 +615,7 @@ MonoBehaviour:
       name: T16Bowling10PinsOnSecondBowlOfFrameAdvancesCorrectly
       fullName: ActionMasterTest.T16Bowling10PinsOnSecondBowlOfFrameAdvancesCorrectly
       resultStatus: 1
-      duration: 0.0166262
+      duration: 0.0166669
       messages: 
       output: 
       stacktrace: 
@@ -627,7 +627,7 @@ MonoBehaviour:
       name: T17Dondi10thFrameTurkey
       fullName: ActionMasterTest.T17Dondi10thFrameTurkey
       resultStatus: 1
-      duration: 0.0163203
+      duration: 0.0165609
       messages: 
       output: 
       stacktrace: 
@@ -936,9 +936,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7c290000
-    m_LastClickedID: 10620
-    m_ExpandedIDs: 9efbffff00000000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 0c7effff327effff8e82ffff9efbffff0000000038290000502900007c2900009a290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -994,9 +994,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 36.129036, y: 73.80377, z: 97.86977}
+    m_Target: {x: 206.27911, y: 133.57957, z: 178.86983}
     speed: 2
-    m_Value: {x: 36.129036, y: 73.80377, z: 97.86977}
+    m_Value: {x: 206.27911, y: 133.57957, z: 178.86983}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -1020,13 +1020,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.097266726, y: 0.08855551, z: -0.008689211, w: -0.9912727}
+    m_Target: {x: -0.11223674, y: 0.1769801, z: -0.020319046, w: -0.97758275}
     speed: 2
-    m_Value: {x: -0.097266726, y: 0.08855551, z: -0.008689212, w: -0.99127275}
+    m_Value: {x: -0.112236746, y: 0.17698011, z: -0.020319048, w: -0.9775828}
   m_Size:
-    m_Target: 328.89093
+    m_Target: 487.77347
     speed: 2
-    m_Value: 328.89093
+    m_Value: 487.77347
   m_Ortho:
     m_Target: 0
     speed: 2
