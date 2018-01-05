@@ -5,19 +5,8 @@ using UnityEngine;
 public class PinCounter : MonoBehaviour {
 
 
-    private int lastSettledCount = 10;
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-
+    public int lastSettledCount = 10;
+    
     public int CountStanding()
     {
         int pinCount = 0;
@@ -40,6 +29,3 @@ public class PinCounter : MonoBehaviour {
         return fallenPins;
     }
 }
-
-
-//TODO Send the pinfall to the GameManager

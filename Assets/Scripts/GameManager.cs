@@ -5,17 +5,19 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
-    public List<int> pins;
-
+    public List<int> pins = new List<int>();
+    public bool ballLeftBox = false;
     private PinCounter pinCounter;
     private PinSetter pinSetter;
-    private ActionMaster actionMaster;
+    private ActionMaster actionMaster = new ActionMaster();
+    private ScoreMaster scoreMaster = new ScoreMaster();
     private Animator animator;
     private Text pinDisplay;
     private Ball ball;
+    private int lastStandingCount = -1;
+    private float lastChangeTime;
 
-    public bool ballLeftBox = false;
-
+    private int play; //TODO APagar!!!!
 
     void Start () {
         pinCounter = GameObject.FindObjectOfType<PinCounter>();
@@ -29,12 +31,51 @@ public class GameManager : MonoBehaviour {
 
         if (ballLeftBox)
         {
-            pinDisplay.color = Color.red;
-            pinSetter.CheckStanding();
+           pinDisplay.color = Color.red;
+           CheckStanding();
         }
     }
 
-    
+    public void CheckStanding()
+    {
+        //Update the lastStandingCount
+        //Call PinsHaveSettled() when they have
+        int currentStanding = pinCounter.CountStanding();
+
+        if (currentStanding != lastStandingCount)
+        {
+            lastChangeTime = Time.time;
+            lastStandingCount = currentStanding;
+            return;
+        }
+
+        if ((Time.time - lastChangeTime) >= 3)
+        {  //if 3 seconds pass after no pin falls
+            PinsHaveSettled();
+        }
+    }
+
+    void PinsHaveSettled()
+    {
+        // Determines what action to pass to PinSetter for the animation
+        // Resets ball
+        int fallenPins = pinCounter.FallenPins();
+        pinCounter.lastSettledCount = pinCounter.CountStanding();
+
+        pins.Add(fallenPins); //Adiciona a jogada à lista "pins"
+
+        ActionMaster.Action action = actionMaster.Bowl(pins);
+        pinSetter.actionAnimation(action);
+        
+        Debug.Log(pins[play]);
+        play++;
+
+        pinDisplay.color = Color.green;
+        lastStandingCount = -1;
+        ballLeftBox = false;
+        ball.Reset();
+    }
+
 
 
 
