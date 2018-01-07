@@ -36,5 +36,6 @@ public class Ball : MonoBehaviour {
 		ballBody.angularVelocity = Vector3.zero;	
 		this.transform.position = startPosition;
 		ballBody.useGravity = false;
+		this.transform.rotation = Quaternion.identity;
 	}
 }

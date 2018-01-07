@@ -59,6 +59,7 @@ public class PinSetter : MonoBehaviour {
             if (pin.IsStanding())
             {
                 pin.transform.Translate(0f, distanceToRaise, 0f);
+				pin.transform.eulerAngles.Set (0f, 0f, 0f);
                 pin.isRaised = true;
                 pin.GetComponent<Rigidbody>().useGravity = false;
             }

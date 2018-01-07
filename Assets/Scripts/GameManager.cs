@@ -17,8 +17,6 @@ public class GameManager : MonoBehaviour {
     private int lastStandingCount = -1;
     private float lastChangeTime;
 
-    private int play; //TODO APagar!!!!
-
     void Start () {
         pinCounter = GameObject.FindObjectOfType<PinCounter>();
         pinSetter = GameObject.FindObjectOfType<PinSetter>();
@@ -34,6 +32,10 @@ public class GameManager : MonoBehaviour {
            pinDisplay.color = Color.red;
            CheckStanding();
         }
+
+		if (ball.GetComponent<Rigidbody> ().velocity.magnitude == 0f) {
+			ball.Reset();
+		}
     }
 
     public void CheckStanding()
@@ -66,9 +68,6 @@ public class GameManager : MonoBehaviour {
 
         ActionMaster.Action action = actionMaster.Bowl(pins);
         pinSetter.actionAnimation(action);
-        
-        Debug.Log(pins[play]);
-        play++;
 
         pinDisplay.color = Color.green;
         lastStandingCount = -1;
