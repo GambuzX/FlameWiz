@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour {
 
         pins.Add(fallenPins); //Adiciona a jogada à lista "pins"
 
-        ActionMaster.Action action = actionMaster.Bowl(pins);
+		ActionMaster.Action action = ActionMaster.NextAction (pins);
         pinSetter.actionAnimation(action);
 
         pinDisplay.color = Color.green;
