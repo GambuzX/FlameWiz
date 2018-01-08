@@ -18,7 +18,7 @@ public class ActionMasterTest {
 		pinFalls = new List<int> ();
 	}
 
-	[Test]
+	/*[Test]
 	public void T00PassingTest() {
 		Assert.AreEqual (1, 1);
 	}
@@ -74,7 +74,7 @@ public class ActionMasterTest {
 		}
 
 		Assert.AreEqual (reset, ActionMaster.NextAction(pinFalls));
-	}
+	}*/
 
 	/*
 	[Test]
@@ -99,7 +99,7 @@ public class ActionMasterTest {
 		actionMaster.Bowl (8);
 		Assert.AreEqual (21, actionMaster.bowl);
 	}*/
-
+    /*
 	[Test]
 	public void T11AfterFirstBowlInLastSetReturnsTidy() {
 		int[] rolls = {1,1 , 1,1 , 1,1 , 1,1, 1,1 , 1,1 , 1,1 , 1,1 , 1,1, 1};
@@ -182,5 +182,5 @@ public class ActionMasterTest {
 
 		pinFalls.Add (10);
 		Assert.AreEqual (endGame, ActionMaster.NextAction(pinFalls));
-	} 
+	} */
 }

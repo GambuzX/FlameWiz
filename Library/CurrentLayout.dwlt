@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 508, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 124
+  controlID: 125
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,14 +64,14 @@ MonoBehaviour:
     y: 0
     width: 458
     height: 987
-  m_MinSize: {x: 275, y: 50}
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 17}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,10 +209,10 @@ MonoBehaviour:
     y: 0
     width: 1462
     height: 987
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 57
+  controlID: 12
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,10 +233,10 @@ MonoBehaviour:
     y: 0
     width: 1462
     height: 640
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 58
+  controlID: 13
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -386,9 +386,9 @@ MonoBehaviour:
     - id: '[FlameWiz][suite]'
       name: FlameWiz
       fullName: FlameWiz
-      resultStatus: 1
-      duration: 0.504565
-      messages: 
+      resultStatus: 2
+      duration: 0.5673209
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -398,9 +398,9 @@ MonoBehaviour:
     - id: "[C:/Users/M\xE1rio Mesquita/Documents/repos/Unity/FlameWiz/Library/ScriptAssemblies/Assembly-CSharp.dll][suite]"
       name: Assembly-CSharp.dll
       fullName: "C:/Users/M\xE1rio Mesquita/Documents/repos/Unity/FlameWiz/Library/ScriptAssemblies/Assembly-CSharp.dll"
-      resultStatus: 1
-      duration: 0.4721417
-      messages: 
+      resultStatus: 2
+      duration: 0.5372043
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -411,7 +411,7 @@ MonoBehaviour:
       name: ActionMasterTest
       fullName: ActionMasterTest
       resultStatus: 1
-      duration: 0.4622276
+      duration: 0.4617454
       messages: 
       output: 
       stacktrace: 
@@ -419,11 +419,23 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 1
-    - id: '[Assembly-CSharp][ActionMasterTest.T00PassingTest]'
+    - id: '[Assembly-CSharp][ScoreMasterTest][suite]'
+      name: ScoreMasterTest
+      fullName: ScoreMasterTest
+      resultStatus: 2
+      duration: 0.0503943
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+    - id: '[Assembly-CSharp][ScoreMasterTest.T00PassingTest]'
       name: T00PassingTest
-      fullName: ActionMasterTest.T00PassingTest
+      fullName: ScoreMasterTest.T00PassingTest
       resultStatus: 1
-      duration: 0.022313
+      duration: 0.0082251
       messages: 
       output: 
       stacktrace: 
@@ -431,169 +443,32 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T01OneStrikeReturnsEndTurn]'
-      name: T01OneStrikeReturnsEndTurn
-      fullName: ActionMasterTest.T01OneStrikeReturnsEndTurn
-      resultStatus: 1
-      duration: 0.0183835
-      messages: 
+    - id: '[Assembly-CSharp][ScoreMasterTest.T01Bowl23]'
+      name: T01Bowl23
+      fullName: ScoreMasterTest.T01Bowl23
+      resultStatus: 2
+      duration: 0.0170212
+      messages: "  Expected is <System.Collections.Generic.List`1[System.Int32]> with
+        1 elements, actual is <System.Collections.Generic.List`1[System.Int32]> with
+        0 elements\r\n  Values differ at index [0]\r\n  Missing:  < 5 >"
       output: 
-      stacktrace: 
+      stacktrace: "at ScoreMasterTest.T01Bowl23 () [0x0002c] in C:\\Users\\M\xE1rio
+        Mesquita\\Documents\\repos\\Unity\\FlameWiz\\Assets\\Scripts\\ScoreMasterTest.cs:19\r\n"
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T02Bowl8ReturnsTidy]'
-      name: T02Bowl8ReturnsTidy
-      fullName: ActionMasterTest.T02Bowl8ReturnsTidy
-      resultStatus: 1
-      duration: 0.0166707
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T03Bowl28SpareReturnsEndTurn]'
-      name: T03Bowl28SpareReturnsEndTurn
-      fullName: ActionMasterTest.T03Bowl28SpareReturnsEndTurn
-      resultStatus: 1
-      duration: 0.0170333
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T04SecondBowlReturnsEndTurn]'
-      name: T04SecondBowlReturnsEndTurn
-      fullName: ActionMasterTest.T04SecondBowlReturnsEndTurn
-      resultStatus: 1
-      duration: 0.016762
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T05LastBowlReturnsEndGame]'
-      name: T05LastBowlReturnsEndGame
-      fullName: ActionMasterTest.T05LastBowlReturnsEndGame
-      resultStatus: 1
-      duration: 0.0148339
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T07AfterFirstStrikeInLastSetResets]'
-      name: T07AfterFirstStrikeInLastSetResets
-      fullName: ActionMasterTest.T07AfterFirstStrikeInLastSetResets
-      resultStatus: 1
-      duration: 0.0168166
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T11AfterFirstBowlInLastSetReturnsTidy]'
-      name: T11AfterFirstBowlInLastSetReturnsTidy
-      fullName: ActionMasterTest.T11AfterFirstBowlInLastSetReturnsTidy
-      resultStatus: 1
-      duration: 0.0167147
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T12CheckResetAtSpareInLastSet]'
-      name: T12CheckResetAtSpareInLastSet
-      fullName: ActionMasterTest.T12CheckResetAtSpareInLastSet
-      resultStatus: 1
-      duration: 0.0166598
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T13YoutubeRollsEndInEndGame]'
-      name: T13YoutubeRollsEndInEndGame
-      fullName: ActionMasterTest.T13YoutubeRollsEndInEndGame
-      resultStatus: 1
-      duration: 0.0166826
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T14TidyInBowl20AfterNoStrikeAndLastBowlAwarded]'
-      name: T14TidyInBowl20AfterNoStrikeAndLastBowlAwarded
-      fullName: ActionMasterTest.T14TidyInBowl20AfterNoStrikeAndLastBowlAwarded
-      resultStatus: 1
-      duration: 0.0166468
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T15BensBowl20Test]'
-      name: T15BensBowl20Test
-      fullName: ActionMasterTest.T15BensBowl20Test
-      resultStatus: 1
-      duration: 0.0167833
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T16Bowling10PinsOnSecondBowlOfFrameAdvancesCorrectly]'
-      name: T16Bowling10PinsOnSecondBowlOfFrameAdvancesCorrectly
-      fullName: ActionMasterTest.T16Bowling10PinsOnSecondBowlOfFrameAdvancesCorrectly
-      resultStatus: 1
-      duration: 0.0167157
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T17Dondi10thFrameTurkey]'
-      name: T17Dondi10thFrameTurkey
-      fullName: ActionMasterTest.T17Dondi10thFrameTurkey
-      resultStatus: 1
-      duration: 0.0167974
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    m_ResultText: T12CheckResetAtSpareInLastSet (0.017s)
-    m_ResultStacktrace: 
+    m_ResultText: "T01Bowl23 (0.017s)\n---\nExpected is <System.Collections.Generic.List`1[System.Int32]>
+      with 1 elements, actual is <System.Collections.Generic.List`1[System.Int32]>
+      with 0 elements\r\n  Values differ at index [0]\r\n  Missing:  < 5 >\n---\nat
+      ScoreMasterTest.T01Bowl23 () [0x0002c] in C:\\Users\\M\xE1rio Mesquita\\Documents\\repos\\Unity\\FlameWiz\\Assets\\Scripts\\ScoreMasterTest.cs:19"
+    m_ResultStacktrace: "at ScoreMasterTest.T01Bowl23 () [0x0002c] in C:\\Users\\M\xE1rio
+      Mesquita\\Documents\\repos\\Unity\\FlameWiz\\Assets\\Scripts\\ScoreMasterTest.cs:19\r\n"
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b109db34
-      m_LastClickedID: 886770097
-      m_ExpandedIDs: 3edb00cea4d700d3be35b6f1b3c2b738ffffff7f
+      m_SelectedIDs: be017569
+      m_LastClickedID: 1769275838
+      m_ExpandedIDs: 3edb00cea4d700d3be35b6f158565d04b3c2b738ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -639,7 +514,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: ffffff7f
+      m_ExpandedIDs: b3c2b7380e59a739e456c63cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -740,9 +615,9 @@ MonoBehaviour:
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8e2b0000
-    m_LastClickedID: 11150
-    m_ExpandedIDs: 00000000702b000000ca9a3bffffff7f
+    m_SelectedIDs: c0270000
+    m_LastClickedID: 10176
+    m_ExpandedIDs: 000000007a27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -770,7 +645,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000702b0000
+    m_ExpandedIDs: 000000007a270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -888,28 +763,28 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f4050000
+    m_SelectedIDs: 82070000
     m_LastClickedID: 0
-    m_ExpandedIDs: 88e8feffaee8feffa8ebfeff4a37ffff7037ffff4e3bfffff8e7ffff000000008c2c0000d02c000000390000705c0000845c0000
+    m_ExpandedIDs: 3ca0ffff6ea0ffff66a4ffff14b1ffff8eb2ffff66b4ffff50b5ffff76b5ffff8ab9ffffe4bfffff76c9ffff9cc9ffff6acdffffa8e2ffff9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Pin Counter
-      m_OriginalName: Pin Counter
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 11558
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
-  - Game
+  - InitTestScene636510419135515369
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting

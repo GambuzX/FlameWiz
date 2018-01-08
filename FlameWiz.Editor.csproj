@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FBF43F75-3DC2-B3DA-D76E-20F5EE807ACD}</ProjectGuid>
+    <ProjectGuid>{10592495-FA8F-4292-B4BD-07D241AB5B79}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>2017.3.0f3</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -288,20 +288,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ActionMaster.cs" />
-    <Compile Include="Assets\Scripts\ActionMasterTest.cs" />
-    <Compile Include="Assets\Scripts\Ball.cs" />
-    <Compile Include="Assets\Scripts\BallDragLaunch.cs" />
-    <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Pin.cs" />
-    <Compile Include="Assets\Scripts\PinCounter.cs" />
-    <Compile Include="Assets\Scripts\PinSetter.cs" />
-    <Compile Include="Assets\Scripts\pinsParent.cs" />
-    <Compile Include="Assets\Scripts\ScoreMaster.cs" />
-    <Compile Include="Assets\Scripts\ScoreMasterTest.cs" />
-    <Compile Include="Assets\START Pack\Scripts\ActionMaster2.cs" />
-    <Compile Include="Assets\START Pack\Scripts\OurScoreDisplayTest1.cs" />
+    <ProjectReference Include="FlameWiz.csproj">
+      <Project>{FBF43F75-3DC2-B3DA-D76E-20F5EE807ACD}</Project>
+      <Name>FlameWiz</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Editor\ScoreMasterTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
