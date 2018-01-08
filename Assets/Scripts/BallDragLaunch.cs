@@ -16,7 +16,10 @@ public class BallDragLaunch : MonoBehaviour {
 
     private void Update()
     {
-        //transform.position = new Vector3(Mathf.Clamp(transform.position.x, -42.15f, 42.15f), transform.position.y, transform.position.z);
+        if (!ball.hasLaunched)
+        {
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, -42.15f, 42.15f), transform.position.y, transform.position.z);
+        }
     }
     public void DragStart() { //
         //capture time and position of drag start

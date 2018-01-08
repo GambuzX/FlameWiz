@@ -6,9 +6,7 @@ using UnityEngine.UI;
 public class PinSetter : MonoBehaviour {
 	
 	private Animator animator;
-    private ActionMaster actionMaster = new ActionMaster();
     private PinCounter pinCounter;
-    private GameManager gameManager;
 
     public GameObject pinSet;
     public float distanceToRaise = 40f;
@@ -16,7 +14,6 @@ public class PinSetter : MonoBehaviour {
     void Start () {
 		animator = this.GetComponent<Animator> ();
         pinCounter = GameObject.FindObjectOfType<PinCounter>();
-        gameManager = GameObject.FindObjectOfType<GameManager>();
     }
 
 
@@ -28,7 +25,7 @@ public class PinSetter : MonoBehaviour {
 		}
 	}	
 
-    public void actionAnimation(ActionMaster.Action action) {
+    public void triggerAnimation(ActionMaster.Action action) {
 
         if (action == ActionMaster.Action.Tidy)
         {
@@ -37,12 +34,12 @@ public class PinSetter : MonoBehaviour {
         else if (action == ActionMaster.Action.Reset)
         {
             animator.SetTrigger("resetTrigger");
-            pinCounter.lastSettledCount = 10;
+            pinCounter.Reset();
         }
         else if (action == ActionMaster.Action.EndTurn)
         {
             animator.SetTrigger("resetTrigger");
-            pinCounter.lastSettledCount = 10;
+            pinCounter.Reset();
         }
         else if (action == ActionMaster.Action.EndGame)
         {
@@ -59,7 +56,7 @@ public class PinSetter : MonoBehaviour {
             if (pin.IsStanding())
             {
                 pin.transform.Translate(0f, distanceToRaise, 0f);
-				pin.transform.eulerAngles.Set (0f, 0f, 0f);
+                pin.transform.eulerAngles.Set(0f, 0f, 0f);
                 pin.isRaised = true;
                 pin.GetComponent<Rigidbody>().useGravity = false;
             }
