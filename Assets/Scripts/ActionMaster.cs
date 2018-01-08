@@ -8,8 +8,24 @@ public class ActionMaster {
 
 	private int[] bowls = new int[21]; //array used to store bowls
 	public int bowl = 1;  //bowl number
+	private GameManager gameManager;
 
-	public Action Bowl (int pins) {
+	void Start(){
+		gameManager = GameObject.FindObjectOfType<GameManager> ();
+	}
+
+	public static Action NextAction (List<int> pinFalls) {
+		ActionMaster actionMaster = new ActionMaster ();
+		Action currentAction = new Action();
+
+		foreach (int play in pinFalls) {
+			currentAction = actionMaster.Bowl (play);
+		}
+
+		return currentAction;
+	}
+
+	private Action Bowl (int pins) {
 		if (pins < 0 || pins > 10) {
 			throw new UnityException ("Invalid number of pins");
 		}
@@ -22,13 +38,13 @@ public class ActionMaster {
 		if (bowl >= 21) {
 			return Action.EndGame;
 		}	else if (bowl == 20 && bowls[19-1]== 10 && bowls[20-1] != 10) {  //If 19th bowl was a strike and 20th is not, return Tidy
-				bowl++;
-				return Action.Tidy;
+			bowl++;
+			return Action.Tidy;
 		}	else if (bowl >= 19 && isLastBowlAwarded ()) { //If Strike or Spare in last set, reset and add1 to bowl
-				bowl++;
-				return Action.Reset;
+			bowl++;
+			return Action.Reset;
 		} else if (bowl == 20 && !isLastBowlAwarded()) {
-				return Action.EndGame;	}
+			return Action.EndGame;	}
 
 		// If first bowl of frame
 		// Return Action.Tidy;

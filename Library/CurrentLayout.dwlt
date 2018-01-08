@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 125
+  controlID: 124
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -60,12 +60,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1531
+    x: 1462
     y: 0
-    width: 389
+    width: 458
     height: 987
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -88,8 +88,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 379
-    height: 596
+    width: 252
+    height: 640
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
@@ -112,9 +112,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 596
-    width: 1531
-    height: 391
+    y: 640
+    width: 1462
+    height: 347
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 16}
@@ -124,7 +124,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 12}
   m_Selected: 0
-  m_LastSelected: 3
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -207,12 +207,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1531
+    width: 1462
     height: 987
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 12
+  controlID: 57
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -231,12 +231,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1531
-    height: 596
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+    width: 1462
+    height: 640
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 13
+  controlID: 58
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,12 +251,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 379
+    x: 252
     y: 0
-    width: 1152
-    height: 596
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 1210
+    height: 640
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -347,9 +347,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 688
-    width: 1529
-    height: 370
+    y: 558
+    width: 1167
+    height: 284
   m_PersistentViewDataDictionary: {fileID: 0}
   m_AnimEditor: {fileID: 0}
   m_Locked: 0
@@ -374,9 +374,9 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1533
+    x: 1464
     y: 92
-    width: 387
+    width: 456
     height: 966
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TestTypeToolbarIndex: 0
@@ -387,7 +387,7 @@ MonoBehaviour:
       name: FlameWiz
       fullName: FlameWiz
       resultStatus: 1
-      duration: 0.6360789
+      duration: 0.504565
       messages: 
       output: 
       stacktrace: 
@@ -399,7 +399,7 @@ MonoBehaviour:
       name: Assembly-CSharp.dll
       fullName: "C:/Users/M\xE1rio Mesquita/Documents/repos/Unity/FlameWiz/Library/ScriptAssemblies/Assembly-CSharp.dll"
       resultStatus: 1
-      duration: 0.6033901
+      duration: 0.4721417
       messages: 
       output: 
       stacktrace: 
@@ -411,7 +411,7 @@ MonoBehaviour:
       name: ActionMasterTest
       fullName: ActionMasterTest
       resultStatus: 1
-      duration: 0.5940803
+      duration: 0.4622276
       messages: 
       output: 
       stacktrace: 
@@ -423,7 +423,7 @@ MonoBehaviour:
       name: T00PassingTest
       fullName: ActionMasterTest.T00PassingTest
       resultStatus: 1
-      duration: 0.0219593
+      duration: 0.022313
       messages: 
       output: 
       stacktrace: 
@@ -435,7 +435,7 @@ MonoBehaviour:
       name: T01OneStrikeReturnsEndTurn
       fullName: ActionMasterTest.T01OneStrikeReturnsEndTurn
       resultStatus: 1
-      duration: 0.0175178
+      duration: 0.0183835
       messages: 
       output: 
       stacktrace: 
@@ -447,7 +447,7 @@ MonoBehaviour:
       name: T02Bowl8ReturnsTidy
       fullName: ActionMasterTest.T02Bowl8ReturnsTidy
       resultStatus: 1
-      duration: 0.0165214
+      duration: 0.0166707
       messages: 
       output: 
       stacktrace: 
@@ -459,7 +459,7 @@ MonoBehaviour:
       name: T03Bowl28SpareReturnsEndTurn
       fullName: ActionMasterTest.T03Bowl28SpareReturnsEndTurn
       resultStatus: 1
-      duration: 0.0152908
+      duration: 0.0170333
       messages: 
       output: 
       stacktrace: 
@@ -471,7 +471,7 @@ MonoBehaviour:
       name: T04SecondBowlReturnsEndTurn
       fullName: ActionMasterTest.T04SecondBowlReturnsEndTurn
       resultStatus: 1
-      duration: 0.0165916
+      duration: 0.016762
       messages: 
       output: 
       stacktrace: 
@@ -483,19 +483,7 @@ MonoBehaviour:
       name: T05LastBowlReturnsEndGame
       fullName: ActionMasterTest.T05LastBowlReturnsEndGame
       resultStatus: 1
-      duration: 0.0166654
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T06NoStrikeOrSpareInLastSetEndsGame]'
-      name: T06NoStrikeOrSpareInLastSetEndsGame
-      fullName: ActionMasterTest.T06NoStrikeOrSpareInLastSetEndsGame
-      resultStatus: 1
-      duration: 0.016576
+      duration: 0.0148339
       messages: 
       output: 
       stacktrace: 
@@ -507,43 +495,7 @@ MonoBehaviour:
       name: T07AfterFirstStrikeInLastSetResets
       fullName: ActionMasterTest.T07AfterFirstStrikeInLastSetResets
       resultStatus: 1
-      duration: 0.0165671
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T08AfterFirstStrikeInLastSetGoesToBowl20]'
-      name: T08AfterFirstStrikeInLastSetGoesToBowl20
-      fullName: ActionMasterTest.T08AfterFirstStrikeInLastSetGoesToBowl20
-      resultStatus: 1
-      duration: 0.016573
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T09AfterSecondStrikeInLastSetGoesToBowl21]'
-      name: T09AfterSecondStrikeInLastSetGoesToBowl21
-      fullName: ActionMasterTest.T09AfterSecondStrikeInLastSetGoesToBowl21
-      resultStatus: 1
-      duration: 0.0165931
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ActionMasterTest.T10AfterSpareInLastSetGoesToBowl21]'
-      name: T10AfterSpareInLastSetGoesToBowl21
-      fullName: ActionMasterTest.T10AfterSpareInLastSetGoesToBowl21
-      resultStatus: 1
-      duration: 0.0165004
+      duration: 0.0168166
       messages: 
       output: 
       stacktrace: 
@@ -555,7 +507,7 @@ MonoBehaviour:
       name: T11AfterFirstBowlInLastSetReturnsTidy
       fullName: ActionMasterTest.T11AfterFirstBowlInLastSetReturnsTidy
       resultStatus: 1
-      duration: 0.016607
+      duration: 0.0167147
       messages: 
       output: 
       stacktrace: 
@@ -567,7 +519,7 @@ MonoBehaviour:
       name: T12CheckResetAtSpareInLastSet
       fullName: ActionMasterTest.T12CheckResetAtSpareInLastSet
       resultStatus: 1
-      duration: 0.0168184
+      duration: 0.0166598
       messages: 
       output: 
       stacktrace: 
@@ -579,7 +531,7 @@ MonoBehaviour:
       name: T13YoutubeRollsEndInEndGame
       fullName: ActionMasterTest.T13YoutubeRollsEndInEndGame
       resultStatus: 1
-      duration: 0.0164319
+      duration: 0.0166826
       messages: 
       output: 
       stacktrace: 
@@ -591,7 +543,7 @@ MonoBehaviour:
       name: T14TidyInBowl20AfterNoStrikeAndLastBowlAwarded
       fullName: ActionMasterTest.T14TidyInBowl20AfterNoStrikeAndLastBowlAwarded
       resultStatus: 1
-      duration: 0.0167744
+      duration: 0.0166468
       messages: 
       output: 
       stacktrace: 
@@ -603,7 +555,7 @@ MonoBehaviour:
       name: T15BensBowl20Test
       fullName: ActionMasterTest.T15BensBowl20Test
       resultStatus: 1
-      duration: 0.0168308
+      duration: 0.0167833
       messages: 
       output: 
       stacktrace: 
@@ -615,7 +567,7 @@ MonoBehaviour:
       name: T16Bowling10PinsOnSecondBowlOfFrameAdvancesCorrectly
       fullName: ActionMasterTest.T16Bowling10PinsOnSecondBowlOfFrameAdvancesCorrectly
       resultStatus: 1
-      duration: 0.0166262
+      duration: 0.0167157
       messages: 
       output: 
       stacktrace: 
@@ -627,7 +579,7 @@ MonoBehaviour:
       name: T17Dondi10thFrameTurkey
       fullName: ActionMasterTest.T17Dondi10thFrameTurkey
       resultStatus: 1
-      duration: 0.0163203
+      duration: 0.0167974
       messages: 
       output: 
       stacktrace: 
@@ -635,12 +587,12 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    m_ResultText: 
+    m_ResultText: T12CheckResetAtSpareInLastSet (0.017s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
+      m_SelectedIDs: b109db34
+      m_LastClickedID: 886770097
       m_ExpandedIDs: 3edb00cea4d700d3be35b6f1b3c2b738ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -762,9 +714,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 688
-    width: 1529
-    height: 370
+    y: 732
+    width: 1460
+    height: 326
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -788,9 +740,9 @@ MonoBehaviour:
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: be270000
-    m_LastClickedID: 10174
-    m_ExpandedIDs: 000000007827000000ca9a3bffffff7f
+    m_SelectedIDs: 8e2b0000
+    m_LastClickedID: 11150
+    m_ExpandedIDs: 00000000702b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -818,7 +770,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000078270000
+    m_ExpandedIDs: 00000000702b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -845,8 +797,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c62300009a290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -895,9 +847,9 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1533
+    x: 1464
     y: 92
-    width: 387
+    width: 456
     height: 966
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ScrollPosition: {x: 0, y: 0}
@@ -931,28 +883,28 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 92
-    width: 377
-    height: 575
+    width: 250
+    height: 619
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7c290000
-    m_LastClickedID: 10620
-    m_ExpandedIDs: 9efbffff00000000
+    m_SelectedIDs: f4050000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 88e8feffaee8feffa8ebfeff4a37ffff7037ffff4e3bfffff8e7ffff000000008c2c0000d02c000000390000705c0000845c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Pin Counter
+      m_OriginalName: Pin Counter
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 11558
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -983,20 +935,20 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 381
+    x: 254
     y: 92
-    width: 1148
-    height: 575
+    width: 1206
+    height: 619
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1617.1949433531308
+  lastFramingTime: 483.3955065216435
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 36.129036, y: 73.80377, z: 97.86977}
+    m_Target: {x: 110, y: 234.40001, z: 0}
     speed: 2
-    m_Value: {x: 36.129036, y: 73.80377, z: 97.86977}
+    m_Value: {x: 110, y: 234.40001, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -1020,13 +972,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.097266726, y: 0.08855551, z: -0.008689211, w: -0.9912727}
+    m_Target: {x: -0.111707926, y: -0.12279904, z: 0.013912154, w: -0.98602647}
     speed: 2
-    m_Value: {x: -0.097266726, y: 0.08855551, z: -0.008689212, w: -0.99127275}
+    m_Value: {x: -0.11170792, y: -0.12279904, z: 0.013912153, w: -0.98602647}
   m_Size:
-    m_Target: 328.89093
+    m_Target: 476.61676
     speed: 2
-    m_Value: 328.89093
+    m_Value: 476.61676
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1060,10 +1012,10 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 381
+    x: 254
     y: 92
-    width: 1148
-    height: 575
+    width: 1206
+    height: 619
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -1073,10 +1025,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -574
-    m_HBaseRangeMax: 574
-    m_VBaseRangeMin: -279
-    m_VBaseRangeMax: 279
+    m_HBaseRangeMin: -603
+    m_HBaseRangeMax: 603
+    m_VBaseRangeMin: -301
+    m_VBaseRangeMax: 301
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1093,25 +1045,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 1148
-      height: 558
+      width: 1206
+      height: 602
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 574, y: 279}
+    m_Translation: {x: 603, y: 301}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -574
-      y: -279
-      width: 1148
-      height: 558
+      x: -603
+      y: -301
+      width: 1206
+      height: 602
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1148, y: 575}
+  m_LastWindowPixelSize: {x: 1206, y: 619}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -1138,7 +1090,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 688
-    width: 1529
-    height: 370
+    y: 732
+    width: 1460
+    height: 326
   m_PersistentViewDataDictionary: {fileID: 0}
