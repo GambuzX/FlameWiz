@@ -109,7 +109,7 @@ public class ScoreMasterTest {
 		int[] frames = {22, 15,   5};
 		Assert.AreEqual (frames.ToList(), ScoreMaster.ScoreFrames (rolls.ToList()));
 	}
-/*
+
 	[Test]
 	public void T15MultiStrikes3 () {
 		int[] rolls = { 10, 10, 2,3, 10, 5,3};
@@ -151,14 +151,14 @@ public class ScoreMasterTest {
 		int[] totalS = {  2,   4,   6,   8,  10,  12,  14,  16,  18,    35};
 		Assert.AreEqual (totalS.ToList(), ScoreMaster.ScoreCumulative (rolls.ToList()));
 	}
-	
+
 	[Test]
 	public void T21StrikeInLastFrame () {
 		int[] rolls = { 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 10,2,3};
 		int[] totalS = {  2,   4,   6,   8,  10,  12,  14,  16,  18,     33};
 		Assert.AreEqual (totalS.ToList(), ScoreMaster.ScoreCumulative (rolls.ToList()));
 	}
-
+/*	
 	// http://slocums.homestead.com/gamescore.html
 	[Test]
 	[Category ("Verification")]
