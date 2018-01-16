@@ -22,10 +22,13 @@ public class ScoreMaster {
         int strikeCumulative = 0;
 
         int rollsLength = rolls.Count;
+        int bowl = 1;  //registers current bowl number
         bool firstBowlOfSet = true;
+        bool lastSet = false;
         
         for (int i = 0; i < rollsLength; i++)
         {
+
             if (firstBowlOfSet)
             {
                 int roll = rolls[i];
@@ -53,7 +56,17 @@ public class ScoreMaster {
                     nextnextRollValid = false;
                 }
 
-                if (roll == 10) //if strike
+                if (bowl == 19)
+                {
+                    if (nextnextRollValid){
+                        frameList.Add(roll + nextRoll + nextnextRoll);
+                    }
+                    else {
+                        frameList.Add(roll + nextRoll);
+                        }
+                    return frameList;
+                }
+                else if (roll == 10) //if strike
                 {
                     if (nextRollValid && nextnextRollValid)
                     {
@@ -76,65 +89,13 @@ public class ScoreMaster {
                         firstBowlOfSet = false;
                     }
                 }
+                bowl += 2;
             }
             else //if second bowl of set
             {
                 firstBowlOfSet = true;
             }
         }
-
-        /*foreach (int roll in rolls) {
-            if (secondFrame) {
-                sum += roll;
-
-                if (strikeCumulative == 10) { //if last frame was a strike
-                    int value = strikeCumulative + sum;
-                    frameList.Add(value);
-                    strikeCumulative = 0;
-                }
-
-                if (sum >= 10) //spare
-                {
-                    previousRoll = 10; //stores value
-                }
-                else //not spare
-                {
-                    frameList.Add(sum);
-                }                
-                sum = 0;
-                secondFrame = false;
-            }
-            else { //first frame           
-
-                if (roll == 10) //if strike
-                {
-                    if (strikeCumulative >= 20)//if last two frames were strike
-                    {
-                        frameList.Add(30); //adds 30
-                    } else
-                    {
-                        strikeCumulative += 10;
-                        rolls.
-                    }
-                }
-                else { //not a strike
-                    if (strikeCumulative == 20) //if last two frames were strike and this bowl isnt
-                    {
-                        int score = 20 + roll;
-                        frameList.Add(score);
-                        strikeCumulative = 0;
-                    }
-                    sum += roll;
-                    secondFrame = true;
-                    if (previousRoll == 10) //if last frame scored 10 pins
-                    {
-                        int previousScore = 10 + roll;
-                        frameList.Add(previousScore);
-                        previousRoll = 0;
-                    }
-                }
-            }
-        }*/
         return frameList;
     }
 

@@ -158,7 +158,6 @@ public class ScoreMasterTest {
 		int[] totalS = {  2,   4,   6,   8,  10,  12,  14,  16,  18,     33};
 		Assert.AreEqual (totalS.ToList(), ScoreMaster.ScoreCumulative (rolls.ToList()));
 	}
-/*	
 	// http://slocums.homestead.com/gamescore.html
 	[Test]
 	[Category ("Verification")]
@@ -168,6 +167,7 @@ public class ScoreMasterTest {
 		Assert.AreEqual (totalS.ToList(), ScoreMaster.ScoreCumulative (rolls.ToList()));
 	}
 	
+
 	//http://guttertoglory.com/wp-content/uploads/2011/11/score-2011_11_28.png
 	[Category ("Verification")]
 	[Test]
@@ -212,5 +212,5 @@ public class ScoreMasterTest {
 		int[] totalS = {30, 60, 89,108, 117,147,177,207,236,    256};
 		Assert.AreEqual (totalS.ToList(), ScoreMaster.ScoreCumulative (rolls.ToList()));
 	}
-    */
+    
 }

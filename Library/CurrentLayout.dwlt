@@ -386,9 +386,9 @@ MonoBehaviour:
     - id: '[FlameWiz][suite]'
       name: FlameWiz
       fullName: FlameWiz
-      resultStatus: 2
-      duration: 0.6002955
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.099581
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -398,9 +398,9 @@ MonoBehaviour:
     - id: "[C:/Users/M\xE1rio Mesquita/Documents/repos/Unity/FlameWiz/Library/ScriptAssemblies/Assembly-CSharp.dll][suite]"
       name: Assembly-CSharp.dll
       fullName: "C:/Users/M\xE1rio Mesquita/Documents/repos/Unity/FlameWiz/Library/ScriptAssemblies/Assembly-CSharp.dll"
-      resultStatus: 2
-      duration: 0.5702892
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.0446794
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -411,7 +411,7 @@ MonoBehaviour:
       name: ActionMasterTest
       fullName: ActionMasterTest
       resultStatus: 1
-      duration: 0.0010151
+      duration: 0.0011565
       messages: 
       output: 
       stacktrace: 
@@ -422,9 +422,9 @@ MonoBehaviour:
     - id: '[Assembly-CSharp][ScoreMasterTest][suite]'
       name: ScoreMasterTest
       fullName: ScoreMasterTest
-      resultStatus: 2
-      duration: 0.5443379
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.0360918
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -435,7 +435,7 @@ MonoBehaviour:
       name: T00PassingTest
       fullName: ScoreMasterTest.T00PassingTest
       resultStatus: 1
-      duration: 0.013392
+      duration: 0.018879
       messages: 
       output: 
       stacktrace: 
@@ -447,7 +447,7 @@ MonoBehaviour:
       name: T01Bowl23
       fullName: ScoreMasterTest.T01Bowl23
       resultStatus: 1
-      duration: 0.0101805
+      duration: 0.0100179
       messages: 
       output: 
       stacktrace: 
@@ -459,7 +459,7 @@ MonoBehaviour:
       name: T02Bowl234
       fullName: ScoreMasterTest.T02Bowl234
       resultStatus: 1
-      duration: 0.0085047
+      duration: 0.0104375
       messages: 
       output: 
       stacktrace: 
@@ -471,7 +471,7 @@ MonoBehaviour:
       name: T03Bowl2345
       fullName: ScoreMasterTest.T03Bowl2345
       resultStatus: 1
-      duration: 0.0086562
+      duration: 0.0084654
       messages: 
       output: 
       stacktrace: 
@@ -483,7 +483,7 @@ MonoBehaviour:
       name: T04Bowl23456
       fullName: ScoreMasterTest.T04Bowl23456
       resultStatus: 1
-      duration: 0.0083683
+      duration: 0.0084987
       messages: 
       output: 
       stacktrace: 
@@ -495,7 +495,7 @@ MonoBehaviour:
       name: T05Bowl234561
       fullName: ScoreMasterTest.T05Bowl234561
       resultStatus: 1
-      duration: 0.0086025
+      duration: 0.0081929
       messages: 
       output: 
       stacktrace: 
@@ -507,7 +507,7 @@ MonoBehaviour:
       name: T06Bowl2345612
       fullName: ScoreMasterTest.T06Bowl2345612
       resultStatus: 1
-      duration: 0.0084264
+      duration: 0.0084147
       messages: 
       output: 
       stacktrace: 
@@ -519,7 +519,7 @@ MonoBehaviour:
       name: T07BowlX1
       fullName: ScoreMasterTest.T07BowlX1
       resultStatus: 1
-      duration: 0.0089284
+      duration: 0.0095723
       messages: 
       output: 
       stacktrace: 
@@ -531,7 +531,7 @@ MonoBehaviour:
       name: T08Bowl19
       fullName: ScoreMasterTest.T08Bowl19
       resultStatus: 1
-      duration: 0.0086464
+      duration: 0.0083621
       messages: 
       output: 
       stacktrace: 
@@ -543,7 +543,7 @@ MonoBehaviour:
       name: T09Bowl123455
       fullName: ScoreMasterTest.T09Bowl123455
       resultStatus: 1
-      duration: 0.0085413
+      duration: 0.0086376
       messages: 
       output: 
       stacktrace: 
@@ -555,7 +555,7 @@ MonoBehaviour:
       name: T10SpareBonus
       fullName: ScoreMasterTest.T10SpareBonus
       resultStatus: 1
-      duration: 0.0083521
+      duration: 0.0084625
       messages: 
       output: 
       stacktrace: 
@@ -567,7 +567,7 @@ MonoBehaviour:
       name: T11SpareBonus2
       fullName: ScoreMasterTest.T11SpareBonus2
       resultStatus: 1
-      duration: 0.0085729
+      duration: 0.0083432
       messages: 
       output: 
       stacktrace: 
@@ -579,7 +579,7 @@ MonoBehaviour:
       name: T12StrikeBonus
       fullName: ScoreMasterTest.T12StrikeBonus
       resultStatus: 1
-      duration: 0.0084017
+      duration: 0.0083542
       messages: 
       output: 
       stacktrace: 
@@ -591,7 +591,7 @@ MonoBehaviour:
       name: T13StrikeBonus3
       fullName: ScoreMasterTest.T13StrikeBonus3
       resultStatus: 1
-      duration: 0.0084306
+      duration: 0.0088452
       messages: 
       output: 
       stacktrace: 
@@ -603,7 +603,7 @@ MonoBehaviour:
       name: T14MultiStrikes
       fullName: ScoreMasterTest.T14MultiStrikes
       resultStatus: 1
-      duration: 0.0085838
+      duration: 0.0083039
       messages: 
       output: 
       stacktrace: 
@@ -615,7 +615,7 @@ MonoBehaviour:
       name: T15MultiStrikes3
       fullName: ScoreMasterTest.T15MultiStrikes3
       resultStatus: 1
-      duration: 0.0084885
+      duration: 0.0084923
       messages: 
       output: 
       stacktrace: 
@@ -627,7 +627,7 @@ MonoBehaviour:
       name: T16TestGutterGame
       fullName: ScoreMasterTest.T16TestGutterGame
       resultStatus: 1
-      duration: 0.0086249
+      duration: 0.0086034
       messages: 
       output: 
       stacktrace: 
@@ -639,7 +639,7 @@ MonoBehaviour:
       name: T17TestAllOnes
       fullName: ScoreMasterTest.T17TestAllOnes
       resultStatus: 1
-      duration: 0.0084802
+      duration: 0.0082523
       messages: 
       output: 
       stacktrace: 
@@ -651,7 +651,7 @@ MonoBehaviour:
       name: T18TestAllStrikes
       fullName: ScoreMasterTest.T18TestAllStrikes
       resultStatus: 1
-      duration: 0.0082068
+      duration: 0.008533
       messages: 
       output: 
       stacktrace: 
@@ -663,7 +663,7 @@ MonoBehaviour:
       name: T19TestImmediateStrikeBonus
       fullName: ScoreMasterTest.T19TestImmediateStrikeBonus
       resultStatus: 1
-      duration: 0.0084548
+      duration: 0.0085673
       messages: 
       output: 
       stacktrace: 
@@ -675,7 +675,7 @@ MonoBehaviour:
       name: T20SpareInLastFrame
       fullName: ScoreMasterTest.T20SpareInLastFrame
       resultStatus: 1
-      duration: 0.0084321
+      duration: 0.0085059
       messages: 
       output: 
       stacktrace: 
@@ -686,28 +686,93 @@ MonoBehaviour:
     - id: '[Assembly-CSharp][ScoreMasterTest.T21StrikeInLastFrame]'
       name: T21StrikeInLastFrame
       fullName: ScoreMasterTest.T21StrikeInLastFrame
-      resultStatus: 2
-      duration: 0.0163168
-      messages: "  Expected is <System.Collections.Generic.List`1[System.Int32]> with
-        10 elements, actual is <System.Collections.Generic.List`1[System.Int32]> with
-        11 elements\r\n  Values differ at index [10]\r\n  Extra:    < 38 >"
+      resultStatus: 1
+      duration: 0.0085411
+      messages: 
       output: 
-      stacktrace: "at ScoreMasterTest.T21StrikeInLastFrame () [0x00038] in C:\\Users\\M\xE1rio
-        Mesquita\\Documents\\repos\\Unity\\FlameWiz\\Assets\\Scripts\\ScoreMasterTest.cs:159\r\n"
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    m_ResultText: "T21StrikeInLastFrame (0.016s)\n---\nExpected is <System.Collections.Generic.List`1[System.Int32]>
-      with 10 elements, actual is <System.Collections.Generic.List`1[System.Int32]>
-      with 11 elements\r\n  Values differ at index [10]\r\n  Extra:    < 38 >\n---\nat
-      ScoreMasterTest.T21StrikeInLastFrame () [0x00038] in C:\\Users\\M\xE1rio Mesquita\\Documents\\repos\\Unity\\FlameWiz\\Assets\\Scripts\\ScoreMasterTest.cs:159"
-    m_ResultStacktrace: "at ScoreMasterTest.T21StrikeInLastFrame () [0x00038] in C:\\Users\\M\xE1rio
-      Mesquita\\Documents\\repos\\Unity\\FlameWiz\\Assets\\Scripts\\ScoreMasterTest.cs:159\r\n"
+    - id: '[Assembly-CSharp][ScoreMasterTest.TG02GoldenCopyA]'
+      name: TG02GoldenCopyA
+      fullName: ScoreMasterTest.TG02GoldenCopyA
+      resultStatus: 1
+      duration: 0.0086048
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][ScoreMasterTest.TG03GoldenCopyB1of3]'
+      name: TG03GoldenCopyB1of3
+      fullName: ScoreMasterTest.TG03GoldenCopyB1of3
+      resultStatus: 1
+      duration: 0.0149929
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][ScoreMasterTest.TG03GoldenCopyB2of3]'
+      name: TG03GoldenCopyB2of3
+      fullName: ScoreMasterTest.TG03GoldenCopyB2of3
+      resultStatus: 1
+      duration: 0.0155759
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][ScoreMasterTest.TG03GoldenCopyB3of3]'
+      name: TG03GoldenCopyB3of3
+      fullName: ScoreMasterTest.TG03GoldenCopyB3of3
+      resultStatus: 1
+      duration: 0.0154018
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][ScoreMasterTest.TG03GoldenCopyC1of3]'
+      name: TG03GoldenCopyC1of3
+      fullName: ScoreMasterTest.TG03GoldenCopyC1of3
+      resultStatus: 1
+      duration: 0.0151455
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][ScoreMasterTest.TG03GoldenCopyC2of3]'
+      name: TG03GoldenCopyC2of3
+      fullName: ScoreMasterTest.TG03GoldenCopyC2of3
+      resultStatus: 1
+      duration: 0.0215624
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    m_ResultText: TG03GoldenCopyC1of3 (0.015s)
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 37b23c02
-      m_LastClickedID: 37532215
+      m_SelectedIDs: dc4fb64a
+      m_LastClickedID: 1253461980
       m_ExpandedIDs: 3edb00cea4d700d3be35b6f158565d04b3c2b738ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -732,7 +797,8 @@ MonoBehaviour:
       NotRunHidden: 0
       m_SearchString: 
       selectedCategoryMask: 0
-      availableCategories: []
+      availableCategories:
+      - Verification
   m_EditModeTestListGUI:
     m_Window: {fileID: 14}
     newResultList:
@@ -1005,7 +1071,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 6847ffff8e47ffffe84bffff3252ffff5852ffff7256ffff8e59ffffb459ffffae5dffff3660ffff5c60ffffa664ffffc667ffffec67ffffac6bffffb66effffdc6effffb872ffffbe76ffffe476ffffc07affff6e83ffff9483ffff9487ffff348bffff5a8bfffffa8effff4c92ffff7292ffff2096ffff8898ffffae98ffff9a9cffff7aa0ffffa0a0ffffb4a4ffffbea8ffffe4a8ffffe2acffff88b2ffffaeb2ffff9ab6ffff8cbaffffb2baffffa2beffffc4c2ffffeac2fffffec6ffff34d6ffff5ad6ffff1cdaffff9cdcffffc2dcffff7ce0ffff18e7ffff3ee7fffffaeaffff1cedffff46edffff30f1ffff9efbffff00000000
+    m_ExpandedIDs: 5a79ffff8079ffff5e7dffff867fffffac7fffff4c84ffff0887ffff2e87ffffc48bfffffc8effff228fffff3a93ffffd095fffff695ffff3a9affff389dffff5e9dffff6ca1ffffc8a4ffffeea4ffff2ca9ffffa8acffffceacffffd4b0fffffab1ffff20b2ffff56b6ffffbcb9ffffe2b9ffff20beffff76bfffff9cbfffffbec3ffff2cc6ffff52c6ffffa8caffff6ecdffff94cdffffb2d1ffff04d4ffff2ad4ffff0ed8ffffd2dbfffff8dbffff6ae0ffff3ce3ffff62e3ffff96e7ffff5ce9ffff86e9fffff8edffff9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
