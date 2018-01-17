@@ -57,12 +57,12 @@
      <Compile Include="Assets\Scripts\BallDragLaunch.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\LaneBox.cs" />
      <Compile Include="Assets\Scripts\Pin.cs" />
      <Compile Include="Assets\Scripts\PinCounter.cs" />
      <Compile Include="Assets\Scripts\PinSetter.cs" />
      <Compile Include="Assets\Scripts\pinsParent.cs" />
      <Compile Include="Assets\Scripts\ScoreMaster.cs" />
+     <Compile Include="Assets\Scripts\ScoreMasterTest.cs" />
      <Compile Include="Assets\START Pack\Scripts\ActionMaster2.cs" />
      <Compile Include="Assets\START Pack\Scripts\OurScoreDisplayTest1.cs" />
  <Reference Include="UnityEngine.UI">
