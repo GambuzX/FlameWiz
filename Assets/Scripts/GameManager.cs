@@ -7,12 +7,15 @@ public class GameManager : MonoBehaviour {
 
     public List<int> bowls = new List<int>();
     public bool ballLeftBox = false;
+
     private PinSetter pinSetter;
     private Ball ball;
+	private ScoreDisplay scoreDisplay;
 
     void Start () {
         pinSetter = GameObject.FindObjectOfType<PinSetter>();
-        ball = GameObject.FindObjectOfType<Ball>();
+		ball = GameObject.FindObjectOfType<Ball>();
+		scoreDisplay = GameObject.FindObjectOfType<ScoreDisplay>();
     }
 	
 	void Update () {
@@ -27,6 +30,9 @@ public class GameManager : MonoBehaviour {
 
         ActionMaster.Action action = ActionMaster.NextAction(bowls);
         pinSetter.triggerAnimation(action);
+
+		scoreDisplay.UpdateScores (bowls);
+
         ball.Reset();
     }
 
