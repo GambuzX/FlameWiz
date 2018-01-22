@@ -86,7 +86,7 @@ public class PinCounter : MonoBehaviour {
         pinDisplay.color = Color.green;
     }
 
-    public void Reset()
+    public void ResetLastSettledCount()
     {
         lastSettledCount = 10;
     }

@@ -34,12 +34,12 @@ public class PinSetter : MonoBehaviour {
         else if (action == ActionMaster.Action.Reset)
         {
             animator.SetTrigger("resetTrigger");
-            pinCounter.Reset();
+            pinCounter.ResetLastSettledCount();
         }
         else if (action == ActionMaster.Action.EndTurn)
         {
             animator.SetTrigger("resetTrigger");
-            pinCounter.Reset();
+            pinCounter.ResetLastSettledCount();
         }
         else if (action == ActionMaster.Action.EndGame)
         {

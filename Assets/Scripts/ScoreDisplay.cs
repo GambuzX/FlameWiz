@@ -8,45 +8,68 @@ public class ScoreDisplay : MonoBehaviour {
 	public Text[] cumulativeScores;
 	public Text[] individualScores;
 
-	private GameManager gameManager;
+    public void FillRolls( List<int> rolls){
 
-	void Start () {
-		gameManager = GameObject.FindObjectOfType<GameManager> ();
-	}
+        string scoresString = FormatRolls(rolls);
 
-	public void UpdateScores(List<int> bowls){
-		int j = 0;
+        for (int i = 0; i < scoresString.Length; i++)
+        {
+            individualScores[i].text = scoresString[i].ToString();
+        }
+    }
 
-		List<int> cumulativeScoresList = ScoreMaster.ScoreCumulative (bowls);
+    public void FillFrames(List<int> frames)
+    {
+        for (int i = 0; i < frames.Count; i++) {
+            cumulativeScores[i].text = frames[i].ToString();
+        }
+    }
 
-		for (int i = 0; i < cumulativeScoresList.Count; i++) {
-			cumulativeScores [i].text = cumulativeScoresList[i].ToString();
-		}
-			
-		/*for (int i = 0; i < bowls.Count; i++) {
-			if (i < 18 && bowls [i] == 10) {
-				individualScores [i].text = "10";
-				i++
-			} else { 
-				individualScores[i].text = bowls[i].ToStirng
-			}
-		}*/
+    public static string FormatRolls (List<int> rolls)
+    {
+        string output = "";
 
-		foreach (int score in bowls) {
-			if (j < 18 && score == 10) {
-				individualScores [j].text = "X";
-				j += 2;
-			} else if (score == 10) {
-				individualScores [j].text = "X";
-				j++;
-			} else if ((j % 2 != 0) && (score + bowls[j - 1] == 10)){
-				individualScores [j].text = "/";
-				j++;
-			} else {
-				individualScores [j].text = score.ToString ();
-				j++;
-			}
-		}
+        //Code here
 
-	}
+        for (int i = 0; i < rolls.Count; i++)
+        {
+            int box = output.Length + 1;
+
+            if (rolls[i] == 0)
+            {
+                output += "-";
+            }
+            else if (box % 2 == 0 && rolls[i - 1] + rolls[i] == 10)
+            {
+                output += "/";
+            }
+            else if (box >= 19 && rolls[i] == 10)
+            {
+                output += "X";
+            }
+            else if (rolls[i] == 10)
+            {
+                output += "X ";
+            }
+            else
+            {
+                output += rolls[i].ToString();
+            }
+        }
+
+
+            /*if (rolls[i] == 10 && output.Length < 19 && ( box % 2 == 0) ){
+                output += "X ";
+            } else if ((box % 2 != 0) && (rolls[i] + rolls[i - 1]) == 10 && output.Length < 19){
+                output += "/";
+            } else if (rolls[i] == 10){
+                output += "X";
+            } else{
+                output += rolls[i].ToString();
+            }
+        }*/
+
+        return output;
+    }
+
 }

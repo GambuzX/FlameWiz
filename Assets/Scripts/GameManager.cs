@@ -30,8 +30,10 @@ public class GameManager : MonoBehaviour {
 
         ActionMaster.Action action = ActionMaster.NextAction(bowls);
         pinSetter.triggerAnimation(action);
-
-		scoreDisplay.UpdateScores (bowls);
+        
+        List<int> frameScores = ScoreMaster.ScoreCumulative(bowls);
+        scoreDisplay.FillFrames(frameScores);
+        scoreDisplay.FillRolls(bowls);
 
         ball.Reset();
     }
