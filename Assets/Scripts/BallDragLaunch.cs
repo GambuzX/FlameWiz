@@ -47,8 +47,11 @@ public class BallDragLaunch : MonoBehaviour {
     {
         if (!ball.hasLaunched)
         {
-            Vector3 translation = new Vector3(xNudge, 0f, 0f);
-            this.transform.position += translation;
+            float xPos = Mathf.Clamp(ball.transform.position.x + xNudge, -42.15f, 42.15f);
+            float yPos = ball.transform.position.y;
+            float zPos = ball.transform.position.z;
+
+            ball.transform.position = new Vector3(xPos, yPos, zPos);
         }
     }
 }
